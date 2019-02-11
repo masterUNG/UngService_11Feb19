@@ -12,6 +12,7 @@
 		C4BD38C62211259700B99A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4BD38C42211259700B99A48 /* Main.storyboard */; };
 		C4BD38C82211259A00B99A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4BD38C72211259A00B99A48 /* Assets.xcassets */; };
 		C4BD38CB2211259A00B99A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4BD38C92211259A00B99A48 /* LaunchScreen.storyboard */; };
+		C4FFFA7C22115E7D00DE2279 /* AuthenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FFFA7B22115E7D00DE2279 /* AuthenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C4BD38C72211259A00B99A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4BD38CA2211259A00B99A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4BD38CC2211259A00B99A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4FFFA7B22115E7D00DE2279 /* AuthenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				C4BD38C02211259600B99A48 /* AppDelegate.swift */,
 				C4BD38C22211259600B99A48 /* ViewController.swift */,
 				C4BD38C42211259700B99A48 /* Main.storyboard */,
+				C4FFFA7B22115E7D00DE2279 /* AuthenViewController.swift */,
 				C4BD38C72211259A00B99A48 /* Assets.xcassets */,
 				C4BD38C92211259A00B99A48 /* LaunchScreen.storyboard */,
 				C4BD38CC2211259A00B99A48 /* Info.plist */,
@@ -137,6 +140,7 @@
 			files = (
 				C4BD38C32211259600B99A48 /* ViewController.swift in Sources */,
 				C4BD38C12211259600B99A48 /* AppDelegate.swift in Sources */,
+				C4FFFA7C22115E7D00DE2279 /* AuthenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
