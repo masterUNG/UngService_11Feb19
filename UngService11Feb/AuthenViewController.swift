@@ -14,17 +14,14 @@ class AuthenViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
+    }   // viewDidload
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func newRegister(_ sender: UIButton) {
+        
+        print("You Click New Register")
+        performSegue(withIdentifier: "GoToRegister", sender: self)
+        
     }
-    */
-
-}
+    
+}   // Main Class
