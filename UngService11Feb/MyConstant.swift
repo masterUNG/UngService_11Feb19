@@ -14,6 +14,15 @@ class MyConstant {
     var url2: String = "&User="
     var url3: String = "&Password="
     
+    var getUrl: String = "https://www.androidthai.in.th/jo/getUserMaster.php?isAdd=true&User="
+    
+    
+    func createUrlGetUser(user: String) -> String {
+        let result: String = "\(getUrl)\(user)"
+        return result
+    }
+    
+    
     func createUrlAddUser(name: String, user: String, password: String) -> String {
         let result: String = "\(url1)\(name)\(url2)\(user)\(url3)\(password)"
         return result

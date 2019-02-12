@@ -35,10 +35,55 @@ class AuthenViewController: UIViewController {
             showAlert(titleString: "Have Space", messageString: "Please Fill All Blank")
         } else {
             
-        }
-        
-        
-        
+            let myConstant = MyConstant()
+            let urlString: String = myConstant.createUrlGetUser(user: user!)
+            guard let url = URL(string: urlString) else {
+                return
+            }
+            
+            let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+                
+                guard let dataResponse = data, error == nil else {
+                    return
+                }
+                
+                do {
+                    
+                    let jsonResponse = try JSONSerialization.jsonObject(with: dataResponse, options: [])
+                    guard let jsonArray = jsonResponse as? [[String: Any]] else {
+                        return
+                    }
+                    
+                    print(jsonArray[0])
+                    for jsonDictionary in jsonArray {
+                        guard let truePassword: String = jsonDictionary["Password"] as? String else {
+                            return
+                        }
+                        if self.password! == truePassword {
+                            DispatchQueue.main.async {
+                                self.performSegue(withIdentifier: "SuccessLogin", sender: self)
+                            }
+                        } else {
+                            DispatchQueue.main.async {
+                                self.showAlert(titleString: "Password False", messageString: "Please Try Again Password False")
+                            }
+                        }
+                    }
+                    
+                    
+                } catch let myError {
+                    print(myError)
+                    DispatchQueue.main.async {
+                        self.showAlert(titleString: "User False", messageString: "No \(self.user!) in my Database")
+                    }
+                }
+                
+                
+                
+                
+            } // End Task
+            task.resume()
+        }   // if1
     }   // login
     
     func showAlert(titleString: String, messageString: String) -> Void {
