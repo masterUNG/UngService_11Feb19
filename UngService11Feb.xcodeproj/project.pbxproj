@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C495DCFD22126A8D00D3E2A2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C495DCFC22126A8D00D3E2A2 /* RegisterViewController.swift */; };
+		C495DCFF22129EFF00D3E2A2 /* MyConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C495DCFE22129EFF00D3E2A2 /* MyConstant.swift */; };
 		C4BD38C12211259600B99A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD38C02211259600B99A48 /* AppDelegate.swift */; };
 		C4BD38C32211259600B99A48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD38C22211259600B99A48 /* ViewController.swift */; };
 		C4BD38C62211259700B99A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4BD38C42211259700B99A48 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		C495DCFC22126A8D00D3E2A2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C495DCFE22129EFF00D3E2A2 /* MyConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConstant.swift; sourceTree = "<group>"; };
 		C4BD38BD2211259600B99A48 /* UngService11Feb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UngService11Feb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4BD38C02211259600B99A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4BD38C22211259600B99A48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				C4BD38C22211259600B99A48 /* ViewController.swift */,
 				C4BD38C42211259700B99A48 /* Main.storyboard */,
 				C495DCFC22126A8D00D3E2A2 /* RegisterViewController.swift */,
+				C495DCFE22129EFF00D3E2A2 /* MyConstant.swift */,
 				C4FFFA7B22115E7D00DE2279 /* AuthenViewController.swift */,
 				C4BD38C72211259A00B99A48 /* Assets.xcassets */,
 				C4BD38C92211259A00B99A48 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4BD38C32211259600B99A48 /* ViewController.swift in Sources */,
+				C495DCFF22129EFF00D3E2A2 /* MyConstant.swift in Sources */,
 				C4BD38C12211259600B99A48 /* AppDelegate.swift in Sources */,
 				C4FFFA7C22115E7D00DE2279 /* AuthenViewController.swift in Sources */,
 				C495DCFD22126A8D00D3E2A2 /* RegisterViewController.swift in Sources */,
