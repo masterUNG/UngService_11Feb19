@@ -46,6 +46,7 @@ class RegisterViewController: UIViewController {
         if (name!.count == 0) || (user!.count == 0) || (password!.count == 0){
 //            Have Space
             print("Have Space")
+            showAlert(title: "Have Space", message: "Please Enter Every Blank")
         } else {
 //            No Space
             print("No Space")
@@ -53,7 +54,19 @@ class RegisterViewController: UIViewController {
         
         
         
-    }
+    }   // upload
+    
+    func showAlert(title: String, message: String) -> Void {
+        
+        let objAlert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        objAlert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in
+            objAlert.dismiss(animated: true, completion: nil)
+        }))
+        self.present(objAlert, animated: true, completion: nil)
+        
+        
+    }   // showAlert
+    
     
     
 
